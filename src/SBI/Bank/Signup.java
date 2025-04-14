@@ -219,7 +219,7 @@ public class Signup extends JFrame implements ActionListener {
             if (textName.getText().equals("")){
                 JOptionPane.showMessageDialog(null,"Fill all the fields");
             }else{
-                Con con1=new Con();
+            	DbConn con1=new DbConn();
                 String q ="insert into signup values('"+fromno+"','"+name+"','"+fname+"','"+DOB+"','"+Gender+"','"+email+"','"+marital+"','"+address+"','"+city+"','"+pincode+"','"+state+"')";
                 con1.statement.executeUpdate(q);
                 new Signup2(fromno);

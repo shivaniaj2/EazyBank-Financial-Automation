@@ -96,7 +96,7 @@ public class Pin extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(null,"Re-Enter New PIN");
                     return;
                 }
-                Con c = new Con();
+                DbConn c = new DbConn();
                 String q1 ="update bank set pin ='"+pin1+"' where pin ='"+pin+"'";
                 String q2 ="update login  set pin ='"+pin1+"' where pin ='"+pin+"'";
                 String q3 ="update signupthree set pin ='"+pin1+"' where pin ='"+pin+"'";
